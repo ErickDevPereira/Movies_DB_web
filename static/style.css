@@ -84,3 +84,7 @@ table {
 table td {
     width: 33%;
 }
+
+#left_content {
+    padding-left: 20px;
+}

@@ -6,8 +6,7 @@ class LoginForm(FlaskForm):
     username = StringField("Username:", validators = [DataRequired(message = 'Empty username is invalid')])
     password = PasswordField("Password", validators = [
                                                     DataRequired(message = 'Empty password is invalid'),
-                                                    Length(min = 8, max = 128, message = 'Length of password must be between 8 and 128 characteres'),
-                                                    Email(message = 'Não pode')
+                                                    Length(min = 8, max = 128, message = 'Length of password must be between 8 and 128 characteres')
                                                     ])
     submit = SubmitField('Login')
 
